@@ -131,6 +131,11 @@ td button {
     color: black;
 }
 
+#back-button:active{
+    background-color: #635a3d
+
+}
+
 #back-button:hover {
     background-color: #635a3d
 }
