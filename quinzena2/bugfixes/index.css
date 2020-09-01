@@ -34,7 +34,7 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    /* background: black; */
 }
 
 .botao-amarelo {
@@ -104,6 +104,7 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
+    
 }
 
 td button {
@@ -133,3 +134,4 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+
