@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #4892E2;
+    /* background-color: #4892E2; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -15,31 +15,34 @@ a{
     text-decoration: none;
     padding: 4px;
     margin: 16px;
-    color: #B33475;
+    color: #6E20D8;
     font-size: 24px;
 }
 
 a:active{
-    background-color: #3A4067;
+    background-color: #E7A694;
 }
 
 a:hover{
-    background-color: #3A4067;
+    background-color: #E7A694;
 }
 
 
 .body{
     text-align: center;
     font-size: 24px;
-    padding: 8px;
-    color: #B33475;
-    
+    color: #E7A694;  
+}
+
+.image{
+    width: 40%;
+    height: 50%;
 }
 
 .name{
-    font-size: 36px;
+    font-size: 48px;
     padding: 16px;
-    color: #B33475;
+    color: #E7A694;
 }
 
 .project{
@@ -51,19 +54,34 @@ a:hover{
 .text{
     font-size: 20px;
     padding: 8px;
-    color: #B33475;
+    color: #E7A694;
 }
 
 .field{
-    width: 15%;
-    padding: 8px;
-    border: solid 2px #3A4067;
+    width: 100%;
+    border: solid 2px #6E20D8;
+    padding: 12px 20px;
+    margin: 8px 0
 }
 
 .button{
     width: 20%;
     padding: 8px;
-    background-color: #3A4067;
+    background-color: #6E20D8;
     font-size: 20px;
 }
+
+form{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    padding: 20px;
+    color: #E7A694;
+}
+
+textarea{
+    resize: none;
+}
+
+
 
