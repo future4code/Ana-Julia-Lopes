@@ -9,32 +9,74 @@ body {
 
 .green-background {
     background-color: green;
+    
+   
 }
 
 .yellow-background {
     background-color: yellow;
+    
+    
 }
 
 .pink-background {
     background-color: fuchsia;
+    /* display: grid; */
+     
 }
 
 .blue-background {
     background-color: blue;
+    display: grid;
+    grid-template-rows: 140px;
+     
+}
+
+#blank{
+    display: grid;
+    grid-template-rows: 140px;
+    
 }
 
 .red-background {
     background-color: red;
+    display: grid;
+    grid-template-rows: 70px;
+    
 }
 
 .lightgreen-background {
     background-color: lightgreen;
+    display: grid;
+    grid-template-rows: 70px;
+    
+    
 }
 
 .purple-background {
     background-color: purple;
+    display: grid;
+    grid-template-rows: 70px;
 }
 
-.top-container{
+#main-container{
     display: grid;
+    grid-template-rows: 70px 1fr 140px 70px ;
+    min-height: 100vh;
+   
 }
+
+#top-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#middle-container{
+    display: grid;
+    grid-template-columns: 600px 600px 600px;
+}
+
+
+
+
+
