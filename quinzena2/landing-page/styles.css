@@ -14,7 +14,7 @@ header{
    align-items: center;
 }
 
-a{
+.nav{
     background-color: #9CA3A6;
     color: #363B40;
     text-decoration: none;
@@ -38,7 +38,7 @@ a:active{
     color: #363B40;
 }
 
-#quemSomos{
+#who{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -54,9 +54,56 @@ p{
     padding: 20px;
 }
 
-table{
-    min-height: 100vh ;
+#product{
+    background-color: #DAE5E8;
+    color: #363B40;
+    min-height: 100vh;
     display: grid;
+    grid-template-rows: 70px 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
-    
+.shoes{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#person{
+    background-color: #9CA3A6;
+    color: #363B40;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 1fr ;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.time{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+
+footer{
+    background-color: #403C36;
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+  
+.overlay { 
+    transition: all 0.3s; 
+    opacity: 0; 
+    background-color: #DAE5E8; 
+}
+
+  
+.container:hover .overlay { 
+    opacity: 0.8; 
+}
+
