@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+header{
+    background-color: orange;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+
+main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 16px;
+    justify-items: center;
+    align-items: center;
+}
+
+img{
+    border: orange solid 2px;
+    width: 250px;
+    height: 250px;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    padding: 2vw;
+    background-color: grey;
+}
