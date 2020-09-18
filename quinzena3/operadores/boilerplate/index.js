@@ -42,3 +42,41 @@
 // console.log("A diferença é igual a", resultado)
 
 //Exercício 2
+//a.
+// let numeroPar = prompt("Insira um número par")
+// let numero = Number(numeroPar)
+
+// // console.log(numero)
+
+// //b.
+// let resto = numero % 2
+
+// console.log(resto)
+
+//c.
+//O resto sempre será 0 pois o número é divisivel por 2.
+
+
+//.d
+//Vai ter um resto na divisão do número por dois.
+
+//Exercício 3
+//a.
+// let listaDeTarefas = []
+// listaDeTarefas.push(prompt("Digite uma tarefa que precisa fazer"))
+// listaDeTarefas.push(prompt("Digite uma tarefa que precisa fazer"))
+// listaDeTarefas.push(prompt("Digite uma tarefa que precisa fazer"))
+
+// console.log(listaDeTarefas)
+
+// let indice = prompt("Digite um indice das suas tarefas")
+// let numeroIndice = Number(indice)
+// listaDeTarefas.splice(indice, 1)
+
+// console.log(listaDeTarefas)
+
+//Exercício 4
+// let nome = prompt("Qual o seu nome?")
+// let email = prompt("Digite seu e-mail")
+
+// console.log("O e-mail", email, "foi cadastrado com sucesso. Seja bem-vinda(o)", nome, "!")
