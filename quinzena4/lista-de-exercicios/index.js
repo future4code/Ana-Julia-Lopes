@@ -171,4 +171,19 @@ mensagem()
 // O objeto são estruturas de dados complexos de maneira organizada. Com os
 // objetos consegumos criar modelos mais realistas.
 
+//-------------------------------------------------------------------
+
+// 2.
+
+const criaRetangulo = (lado1, lado2) => {
+    const retangulo = {
+        largura: lado1,
+        altura: lado2,
+        perimetro: 2 * (lado1 + lado2),
+        area: (lado1 * lado2)
+    }
+
+    return retangulo
+}
+
 
