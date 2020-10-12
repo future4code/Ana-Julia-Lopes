@@ -153,3 +153,13 @@ const maiorMenor = (numeros) => {
 }
 
 maiorMenor([29, 50, 79, 10, 25])
+
+//-------------------------------------------------------------------
+
+//2. 
+
+const mensagem = () => {
+    alert("Hello Future4")
+}
+
+mensagem()
