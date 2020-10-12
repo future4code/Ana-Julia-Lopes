@@ -64,3 +64,18 @@ for (let numero of numeros) {
 // e) false;
 
 //-------------------------------------------------------------------//
+
+//3.
+ 
+// O código não funciona porque falta um valor na constante quantidadeDeNumerosPares e a iteração i++.
+
+const quantidadeDeNumerosPares = Number(prompt("Escolha N"))
+
+let i = 0
+while(i <= quantidadeDeNumerosPares) {
+    console.log(i * 2)
+    
+    i++
+}
+
+//-------------------------------------------------------------------//
