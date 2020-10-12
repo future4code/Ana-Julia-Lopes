@@ -163,3 +163,12 @@ const mensagem = () => {
 }
 
 mensagem()
+
+//-------------------------------------------------------------------
+
+// 1.
+// O array guarda uma lista de coisas (numeros, objetos, strings...)
+// O objeto são estruturas de dados complexos de maneira organizada. Com os
+// objetos consegumos criar modelos mais realistas.
+
+
