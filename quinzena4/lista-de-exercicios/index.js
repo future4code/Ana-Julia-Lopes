@@ -79,3 +79,20 @@ while(i <= quantidadeDeNumerosPares) {
 }
 
 //-------------------------------------------------------------------//
+
+// 4.
+
+const triangulos = (a, b, c) => {
+    if (a === b && b === c) {
+        return "Equilátero"
+    } else if ((a === b && b !== c) || (a === c && c !== b) || (b === c && c !== a)) {
+        return "Isósceles"
+    } else {
+        return "Escaleno"
+    }
+
+}
+
+console.log(triangulos(3, 4, 5))
+
+//-------------------------------------------------------------------//
