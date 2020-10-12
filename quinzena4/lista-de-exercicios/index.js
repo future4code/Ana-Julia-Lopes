@@ -186,4 +186,21 @@ const criaRetangulo = (lado1, lado2) => {
     return retangulo
 }
 
+//-------------------------------------------------------------------
 
+// 3.
+
+const filmeFavorito = {
+    titulo: "Nasce uma estrela",
+    ano: 2018,
+    diretor: "Bradley Cooper",
+    atoresAtrizes: ["Bradley Cooper", "Lady Gaga", "Sam Elliott"]
+}
+
+let listaDeAtores = ""
+
+for (let ator of filmeFavorito.atoresAtrizes) {
+    listaDeAtores += `${ator}, `
+}
+
+console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${listaDeAtores}`)
