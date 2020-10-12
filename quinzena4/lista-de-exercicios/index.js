@@ -96,3 +96,34 @@ const triangulos = (a, b, c) => {
 console.log(triangulos(3, 4, 5))
 
 //-------------------------------------------------------------------//
+
+
+// 5.
+
+const comparacao = (a, b) => {
+    if (a > b) {
+        console.log(`O maior é: ${a}`)
+    } else if (b > a) {
+        console.log(`O maior é: ${b}`)
+    } else {
+        console.log("São iguais.")
+    }
+
+    if (a % b === 0) {
+        console.log(`${a} é divisível por ${b}`)
+    } else {
+        console.log(`${a} não é divisível por ${b}`)
+    }
+
+    if (b % a === 0) {
+        console.log(`${b} é divisível por ${a}`)
+    } else {
+        console.log(`${b} não é divisível por ${a}`)
+    }
+
+    console.log(`A diferença entre eles é ${Math.sqrt((a - b) * (a - b))}`)
+
+}
+
+console.log(comparacao(15, 30)
+
