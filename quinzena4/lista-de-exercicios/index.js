@@ -29,3 +29,28 @@
 // 1590;
 
 //-------------------------------------------------------------------//
+
+// ------------------ EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO ------------------//
+
+// 1.
+// While, for e for...of;
+
+const numeros = [83, 45, 29, 26, 15]
+
+let i = 0
+
+while (i < numeros.length) {
+    console.log(numeros[i])
+
+    i++
+}
+
+for (i = 0; i < numeros.length; i++) {
+    console.log(numeros[i])
+}
+
+for (let numero of numeros) {
+    console.log(numero)
+}
+
+//-------------------------------------------------------------------//
