@@ -13,3 +13,12 @@
 // undefined
 
 //-------------------------------------------------------------------
+
+// 3.
+// O código cria dois novos arrays (arry1 e array2) a partir de um array (numeros), onde no array1 ele guarda os numeros pares e o array2 
+// guarda os números impares. Após isso ele imprime a quantidade total de itens do array numeros, do array 1 e do array 2.
+//"Quantidade total de números , 13"
+//5
+// 7
+
+//-------------------------------------------------------------------
