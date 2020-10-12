@@ -129,7 +129,7 @@ console.log(comparacao(15, 30))
 //-------------------------------------------------------------------
 
     
-// ------------------ EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO ------------------//
+// ------------------ EXERCÍCIOS DE FUNÇÕES ------------------//
 
 // 1.
 const maiorMenor = (numeros) => {
@@ -165,6 +165,8 @@ const mensagem = () => {
 mensagem()
 
 //-------------------------------------------------------------------
+
+// ------------------ EXERCÍCIOS DE OBJETOS ------------------//
 
 // 1.
 // O array guarda uma lista de coisas (numeros, objetos, strings...)
@@ -221,4 +223,33 @@ const aninimizarPessoa = (pessoa) => {
         ...pessoa,
         nome: "Anônimo"
     }
+}
+
+//-------------------------------------------------------------------
+
+// ------------------ EXERCÍCIOS DE FUNÇÕES DE ARRAY ------------------//
+
+// 1.
+
+const pessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+// a.
+const maioresDeVinte = (pessoas) => {
+    return pessoas.filter(pessoa => {
+        if (pessoa.idade >= 20) {
+            return true
+        } else {
+            return false
+        }
+    }) 
+}
+// b.
+const menoresDeVinte = (pessoas) => {
+    return pessoas.filter(pessoa => {
+        return pessoa.idade < 20
+    }) 
 }
