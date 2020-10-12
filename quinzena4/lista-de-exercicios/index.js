@@ -253,3 +253,45 @@ const menoresDeVinte = (pessoas) => {
         return pessoa.idade < 20
     }) 
 }
+
+//-------------------------------------------------------------------
+
+// 2.
+
+//a.
+
+const array = [1, 2, 3, 4, 5, 6]
+
+const multiplos = (array) => {
+    return array.map(numero => {
+        return numero * 2 
+    })
+}
+
+// b.
+
+const multiplosTres = (array) => {
+    return array.map(numero => {
+        return `${numero * 3}`
+    })
+}
+
+// c.
+
+const parImpar = (array) => {
+    return array.map(numero => {
+        let paridade = ""
+        if (numero % 2 === 0) {
+            paridade = "par"  
+        } else {
+            paridade = "impar"
+        }
+        return `${numero} é ${paridade}`
+    })
+}
+
+//-------------------------------------------------------------------
+
+
+
+
