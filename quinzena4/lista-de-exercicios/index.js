@@ -21,14 +21,14 @@
 //5
 // 7
 
-//-------------------------------------------------------------------
+// -------------------------------------------------------------------
 
 //4.
 // O código coloca o menor número do array na variável numero1 e o maior número na variável numero2. 
 // -10;
 // 1590;
 
-//-------------------------------------------------------------------//
+//-------------------------------------------------------------------
 
 // ------------------ EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO ------------------//
 
@@ -53,7 +53,7 @@ for (let numero of numeros) {
     console.log(numero)
 }
 
-//-------------------------------------------------------------------//
+//-------------------------------------------------------------------
 
 // 2.
 
@@ -63,7 +63,7 @@ for (let numero of numeros) {
 // d) true;
 // e) false;
 
-//-------------------------------------------------------------------//
+//-------------------------------------------------------------------
 
 //3.
  
@@ -78,7 +78,7 @@ while(i <= quantidadeDeNumerosPares) {
     i++
 }
 
-//-------------------------------------------------------------------//
+//-------------------------------------------------------------------
 
 // 4.
 
@@ -95,7 +95,7 @@ const triangulos = (a, b, c) => {
 
 console.log(triangulos(3, 4, 5))
 
-//-------------------------------------------------------------------//
+//-------------------------------------------------------------------
 
 
 // 5.
@@ -125,5 +125,31 @@ const comparacao = (a, b) => {
 
 }
 
-console.log(comparacao(15, 30)
+console.log(comparacao(15, 30))
+//-------------------------------------------------------------------
 
+    
+// ------------------ EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO ------------------//
+
+// 1.
+const maiorMenor = (numeros) => {
+    let maiorNumero = numeros[0]
+    let menorNumero = numeros[0]
+    let segundoMaior = numeros[0]
+    let segundoMenor = numeros[0]
+
+    for (let numero of numeros) {
+        if (numero > maiorNumero) {
+            segundoMaior = maiorNumero
+            maiorNumero = numero
+        }
+        if (numero < menorNumero) {
+            segundoMenor = menorNumero
+            menorNumero = numero
+        }
+    }
+
+    console.log(segundoMaior, segundoMenor)
+}
+
+maiorMenor([29, 50, 79, 10, 25])
