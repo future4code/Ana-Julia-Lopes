@@ -204,3 +204,21 @@ for (let ator of filmeFavorito.atoresAtrizes) {
 }
 
 console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${listaDeAtores}`)
+
+//-------------------------------------------------------------------
+
+// 4.
+
+const pessoa = {
+    nome: "Kleber",
+    idade: 24,
+    email: "kleber@teste.com.br",
+    endereco: "Rua Borboletas Psicodélicas, 666"
+}
+
+const aninimizarPessoa = (pessoa) => {
+    return {
+        ...pessoa,
+        nome: "Anônimo"
+    }
+}
