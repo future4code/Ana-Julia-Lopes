@@ -303,6 +303,53 @@ const pessoas = [
 	{ nome: "Soter", idade: 70, altura: 1.9}
 ]
 
+// a.
+
+const podeEntrar = (pessoas) => {
+    return pessoas.filter( pessoa => {
+        return pessoa.idade > 14 && pessoa.idade < 60 && pessoa.altura >= 1.5
+    })
+}
+
+// b.
+
+const podeEntrar = (pessoas) => {
+    return pessoas.filter( pessoa => {
+        return pessoa.idade < 14 && pessoa.idade > 60 && pessoa.altura <= 1.5
+    })
+}
+
+//-------------------------------------------------------------------
+
+// 4.
+
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+const emails = consultas.map(consulta => {
+    let vocativo = ""
+    let lembrar = ""
+
+    if (consulta.genero === "feminino") {
+        vocativo = "Sra."
+        lembrar = "lembrá-la"
+    } else if (consulta.genero === "masculino") {
+        vocativo = "Sr."
+        lembrar = "lembrá-lo"
+    }
+
+    if (consulta.cancelada) {
+        return `Olá, ${vocativo} ${consulta.nome}. Infelizmente, sua consulta marcada para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`
+    } else {
+        return `Olá, ${vocativo} ${consulta.nome}. Estamos enviando esta mensagem para ${lembrar} da sua consulta no dia ${consulta.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`
+    }
+})
+
+
 
 
 
