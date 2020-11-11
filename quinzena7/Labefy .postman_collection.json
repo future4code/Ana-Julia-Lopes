@@ -1,0 +1,984 @@
+{
+	"info": {
+		"_postman_id": "b61a3220-0aee-4de1-ba54-310121ded743",
+		"name": "Labefy ",
+		"description": "Criação de playlist.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Playlist-Rock\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Criando primeira playlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Pop",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Playlist-Pop\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Criando playlist pop"
+			},
+			"response": []
+		},
+		{
+			"name": "Ecletica",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Playlist-Ecletica\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Criando playlist ecletica"
+			},
+			"response": []
+		},
+		{
+			"name": "Primeira musica de rock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"What's up\",\n\t\"artist\": \"4 Non Blondes\",\n\t\"url\": \"https://open.spotify.com/track/0jWgAnTrNZmOGmqgvHhZEm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/230acff6-ec80-4726-a10f-499f8ba23a29/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"230acff6-ec80-4726-a10f-499f8ba23a29",
+						"tracks"
+					]
+				},
+				"description": "Adicionando a primeira música de rock na playlist."
+			},
+			"response": []
+		},
+		{
+			"name": "Playlists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Verificando criação das playlists."
+			},
+			"response": []
+		},
+		{
+			"name": "Segunda música de rock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bohemian Rhapsody\",\n\t\"artist\": \"Queen\",\n\t\"url\": \"https://www.youtube.com/watch?v=fJ9rUzIMcZQ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/230acff6-ec80-4726-a10f-499f8ba23a29/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"230acff6-ec80-4726-a10f-499f8ba23a29",
+						"tracks"
+					]
+				},
+				"description": "Adicionando a segundo música de rock"
+			},
+			"response": []
+		},
+		{
+			"name": "Primeira música de pop",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Million Reasons\",\n    \"artist\": \"Lady Gaga\",\n    \"url\": \"https://www.youtube.com/watch?v=en2D_5TzXCA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98",
+						"tracks"
+					]
+				},
+				"description": "Adicionando a primeira música de pop"
+			},
+			"response": []
+		},
+		{
+			"name": "Segunda música de pop",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Girls Like You\",\n    \"artist\": \"Maroon 5\",\n    \"url\": \"https://www.youtube.com/watch?v=cBVGlBWQzuc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98",
+						"tracks"
+					]
+				},
+				"description": "Adicionando a segunda música pop"
+			},
+			"response": []
+		},
+		{
+			"name": "Primeira música da playlist eclética",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Conversas de botas batidas\",\n    \"artist\": \"Los Hermanos\",\n    \"url\": \"https://www.youtube.com/watch?v=N3ghu3N-4nY\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				},
+				"description": "Adicionando música na playlist eclética"
+			},
+			"response": []
+		},
+		{
+			"name": "Segunda música da playlist eclética",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Chão de Giz\",\n    \"artist\": \"Zé Ramalho\",\n    \"url\": \"https://www.youtube.com/watch?v=FBMMNBOXins\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				},
+				"description": "Adicionando música na playlist eclética"
+			},
+			"response": []
+		},
+		{
+			"name": "Musicas Rock",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/230acff6-ec80-4726-a10f-499f8ba23a29/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"230acff6-ec80-4726-a10f-499f8ba23a29",
+						"tracks"
+					]
+				},
+				"description": "Verificar se as músicas foram adicionadas corretamente."
+			},
+			"response": []
+		},
+		{
+			"name": "Musicas Pop",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98",
+						"tracks"
+					]
+				},
+				"description": "Verificando se as musicas foram adicionadas corretamente."
+			},
+			"response": []
+		},
+		{
+			"name": "Músicas Ecléticas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				},
+				"description": "Verificando as músicas adicionadas."
+			},
+			"response": []
+		},
+		{
+			"name": "Playlist Favorita",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=Rock",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Rock"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Música que não gosta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Era uma vez\",\n    \"artist\": \"Kell Smith\",\n    \"url\": \"https://www.youtube.com/watch?v=xJNKT9HAXRc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				},
+				"description": "Adicionando música que não gosto."
+			},
+			"response": []
+		},
+		{
+			"name": "Atualização Eclética",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				},
+				"description": "Adicionanando música que não gosta na playlist e verificando."
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar música",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks/c370f3e2-7733-4049-8066-407f4f23d28a",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks",
+						"c370f3e2-7733-4049-8066-407f4f23d28a"
+					]
+				},
+				"description": "Deletando música"
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionando música",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Someone You Loved\", \n    \"artist\": \"Lewis Capaldi\",\n    \"url\": \"https://open.spotify.com/track/2TIlqbIneP0ZY1O0EzYLlc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				},
+				"description": "adicionando música."
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionando outra música",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ok Not Be Ok\", \n    \"artist\": \"Marshmello, Demi Lovato\",\n    \"url\": \"https://open.spotify.com/track/0zzVTGyRrWpQu8Fr28NRAv\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Playlist atualizada",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+						"tracks"
+					]
+				},
+				"description": "Ver se a playlist foi atualizada corretamente."
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Rock",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/230acff6-ec80-4726-a10f-499f8ba23a29",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"230acff6-ec80-4726-a10f-499f8ba23a29"
+					]
+				},
+				"description": "Deletando a playlist Rock"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Pop",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"e6e1a48e-e0e7-435d-bb5d-468dfc4e3b98"
+					]
+				},
+				"description": "Deletando playlist pop."
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar eclética",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/3708cc99-fbfe-4bc1-9718-0b38b1323dd7",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"3708cc99-fbfe-4bc1-9718-0b38b1323dd7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualização playlists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Veriicar se todas as playlists foram deletadas"
+			},
+			"response": []
+		},
+		{
+			"name": "Criando nova playlist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"playlist-Favoritas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Criando nova playlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Validação",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Validação da nova playlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar música",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Motor\",\n\t\"artist\": \"Pitty\",\n\t\"url\": \"https://open.spotify.com/track/6xokpeOZkBhvtlFAdsiIt8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/6dbfe647-4002-45d3-b313-093c07385ec4/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"6dbfe647-4002-45d3-b313-093c07385ec4",
+						"tracks"
+					]
+				},
+				"description": "Adicionando a primeira música a nova playlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar música 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AnaJulia-Lopes-Tang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Memórias\",\n\t\"artist\": \"Pitty\",\n\t\"url\": \"https://open.spotify.com/track/0yfrIZmkRV80l28gDcz8nU\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/6dbfe647-4002-45d3-b313-093c07385ec4/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"6dbfe647-4002-45d3-b313-093c07385ec4",
+						"tracks"
+					]
+				},
+				"description": "Adicionando segunda música a nova playlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar música 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Adicionando terceira música a nova playlist"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
